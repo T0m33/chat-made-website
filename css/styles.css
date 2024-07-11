@@ -1,34 +1,91 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
 header {
     background-color: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
+    position: relative;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.header-content p {
+    font-size: 1.2em;
 }
 
 main {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro, .about, .projects, .contact {
+    background-color: #fff;
     padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+.project h3 {
+    font-size: 1.5em;
+}
+
+.project p {
+    font-size: 1em;
+}
+
+.project a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.project a:hover {
+    color: #0056b3;
 }
 
 footer {
@@ -39,12 +96,10 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.project {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 5px;
+footer p {
+    margin: 0;
+    font-size: 0.9em;
 }
