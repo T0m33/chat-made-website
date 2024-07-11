@@ -25,8 +25,18 @@
     <main>
         <section class="contact">
             <h2>Contact Information</h2>
-            <p>Email: <a href="mailto:your.email@example.com"><i class="fas fa-envelope"></i> your.email@example.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/yourusername/"><i class="fab fa-linkedin"></i> Your LinkedIn</a></p>
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" name="_replyto" required>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
         </section>
     </main>
     <footer>
